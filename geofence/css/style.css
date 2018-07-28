@@ -1,0 +1,38 @@
+h1 {
+    font-family: 'Convergence';
+    font-size: 95px;
+    text-align: center;
+    letter-spacing: -6px;
+    margin: 8px 0;
+    text-shadow: 0 0 1px #000;
+}
+
+h2 {
+    font-family: 'Bitter';
+    font-size: 20px;
+    font-weight: normal;
+    text-align: center;
+    margin: 6px 0;
+    text-transform: lowercase;
+}
+
+#header {
+    width: 800px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+.textarea-part {
+    position: relative;
+}
+
+.btn-apply {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+#mymap {
+    height: 350px;
+    width: auto;
+}
