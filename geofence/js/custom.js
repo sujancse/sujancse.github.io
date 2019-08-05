@@ -37,9 +37,13 @@ function drawPolygon(geofence, infoId) {
 
         geofence.onDomReady(infoWindow, function() {
             selectId('delete').addEventListener('click', function() {
-                geofence.close(infoWindow);
-                var newPolygon = geofence.deleteNode(event, polygon);
-                geofence.setInfo(newPolygon, infoId);
+                try {
+                    geofence.close(infoWindow);
+                    var newPolygon = geofence.deleteNode(event, polygon);
+                    geofence.setInfo(newPolygon, infoId);
+                } catch(e) {
+                    alert(e.message);
+                }
             });
         });
     });
